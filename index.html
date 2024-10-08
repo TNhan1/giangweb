@@ -132,6 +132,17 @@ I love you oh! I love you so much forever you and I
             }
         });
     </script>
+
+	<script>
+    function autoScroll() {
+        window.scrollBy(0, 1); 
+        setTimeout(autoScroll, 15); 
+    }
+	document.addEventListener('click', function() {
+        autoScroll();
+    }, { once: true }); 
+</script>
+	
     <script src="t2.js"></script>
 	 <audio id="backgroundMusic" autoplay loop>
         <source src="1008.MP3" type="audio/mpeg">
